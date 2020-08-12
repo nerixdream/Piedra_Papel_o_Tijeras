@@ -6,7 +6,6 @@ const opcionUsuario = document.querySelector('.gameplay__resultados--usuario');
 const opcionComputadora = document.querySelector('.gameplay__resultados--computadora');
 const resultado = document.querySelector('.resultado__titulo');
 const plus = document.querySelectorAll('.gameplay__point');
-const cajaBoton = document.querySelector('.resultado');
 const menuBotones = document.querySelector('.volver-jugar');
 const resultadoFinal = document.querySelector('.volver-jugar__resultado');
 const container = document.querySelector('.container');
@@ -74,7 +73,6 @@ botones.forEach((boton) => {
 //Funciones
 //Función para asignar un nombre ingresado
 const ingresarUsuario = (nombre) => {
-	// nombreIngresado = prompt('Ingresa tu nombre');
 	container.style.display = 'block';
 
 	if (parseInt(nombre) || nombre === '' || nombre === undefined) {
@@ -208,8 +206,6 @@ const botonesActividad = (estado) => {
 
 const init = () => {
 	opcionPC = [];
-
-	// ingresarUsuario();
 	btnAceptar.addEventListener('click', (e) => {
 		e.preventDefault();
 
