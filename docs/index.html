@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Piedra, Papel o Tijeras</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+	<link href="main.66365e6f2240da20747d.css" rel="stylesheet"></head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1>Piedra, Papel o Tijeras</h1>
+			</header>
+
+			<main class="main">
+				<div class="jugadores">
+					<div class="jugadores__computadora">
+						<div class="jugadores__icon"><i class="fas fa-desktop"></i></div>
+						<div class="jugadores__name">Computadora</div>
+						<div class="jugadores__average" id="puntos-computadora">0</div>
+					</div>
+					<div class="jugadores__usuario">
+						<div class="jugadores__average" id="puntos-usuario">0</div>
+						<div id="usuario" class="jugadores__name">Usuario</div>
+						<div class="jugadores__icon"><i class="fas fa-user"></i></div>
+					</div>
+				</div>
+
+				<div class="gameplay">
+					<div class="gameplay__point gameplay__point--computadora">+1</div>
+					<div class="gameplay__resultados">
+						<div class="gameplay__resultados--computadora">
+							<i class="fas fa-question"></i>
+						</div>
+						<div class="gameplay__resultados--usuario">
+							<i class="fas fa-question"></i>
+						</div>
+					</div>
+					<div class="gameplay__point gameplay__point--usuario">+1</div>
+				</div>
+
+				<div class="resultado">
+					<h2 class="resultado__titulo">¡A jugar!</h2>
+				</div>
+
+				<div class="botones">
+					<button id="piedra" value="rock" class="botones__piedra">
+						<i class="fas fa-hand-rock"></i>
+					</button>
+					<button id="papel" value="paper" class="botones__papel">
+						<i class="fas fa-hand-paper"></i>
+					</button>
+					<button id="tijeras" value="scissors" class="botones__tijeras">
+						<i class="fas fa-hand-scissors"></i>
+					</button>
+				</div>
+			</main>
+		</div>
+		<div class="volver-jugar">
+			<div class="volver-jugar__resultado"><i class="fas fa-gamepad"></i></div>
+			<div class="volver-jugar__botones">
+				<button id="init-game" class="volver-jugar__boton">Jugador nuevo</button>
+				<button id="reset-game" class="volver-jugar__boton">Volver a jugar</button>
+			</div>
+		</div>
+
+		<div class="inicio-juego">
+			<div class="titulo">
+				<h1>Piedra, Papel o Tijeras</h1>
+			</div>
+			<form action="#" class="formulario" id="formulario">
+				<label for="nombre" class="inicio-juego__label">Ingresa tu Nombre</label>
+				<input type="text" placeholder="Ingresa tu nombre" id="nombre" class="inicio-juego__input" />
+				<button id="aceptar" class="inicio-juego__button">Aceptar</button>
+			</form>
+			<div class="instrucciones">
+				El jugador que llegue a los 5 puntos gana.
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.10.2/underscore-min.js"></script>
+	<script type="text/javascript" src="main.5579631b95a396a91c2f.js"></script></body>
+</html>

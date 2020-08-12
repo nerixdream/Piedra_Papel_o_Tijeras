@@ -1,13 +1,17 @@
-# Webpack starter
+# Juego con HTML, CSS y JavaScript
 
-Este es el proyecto inicial para crear aplicaciones utilizando webpack.
+Juego de Piedra, Papel o Tijeras
+
+Inspirado en el curso de JavaScript de Fernando Herrera
 
 ### Notas:
+
 Recuerda reconstruir los módulos de Node
 
 ```
 npm install
 ```
+
 Y para construir el build, ejecuta:
 
 ```
